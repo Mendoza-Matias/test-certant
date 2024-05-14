@@ -1,17 +1,22 @@
-FROM ubuntu:latest AS build
+FROM maven:3.8.4-openjdk-17 AS build
 
-RUN apt-get update
-RUN apt-get install openjdk-17-jdk -y
-COPY . .
+# Establecer un directorio de trabajo
+WORKDIR /app
 
-RUN apt-get install maven -y
+# Copiar archivos de tu proyecto al directorio de trabajo
+COPY . /app
 
-RUN mvn clean install
+# Ejecutar Maven para construir el proyecto
+RUN mvn clean package -DskipTests
 
-FROM openjdk:17-jdk-slim
+# Crear una nueva imagen basada en OpenJDK 11
+FROM openjdk:17-jdk-alpine
 
+# Exponer el puerto que utilizará la aplicación
 EXPOSE 8080
 
-COPY --from=build /target/tecnico-certant-0.0.1-SNAPSHOT.jar app.jar
+# Copiar el archivo JAR construido desde la etapa anterior
+COPY --from=build /app/target/tecnico-certant-0.0.1-SNAPSHOT.jar /app/tecnico-certant-0.0.1-SNAPSHOT.jar
 
-ENTRYPOINT ["java","-jar","app.jar"]
+# Establecer el punto de entrada para ejecutar la aplicación
+ENTRYPOINT ["java", "-jar", "/app/tecnico-certant-0.0.1-SNAPSHOT.jar"]
