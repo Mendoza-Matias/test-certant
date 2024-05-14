@@ -1,4 +1,5 @@
 C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\domain\dto\paciente\PacienteDto.java
+C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\config\security\exception\CustomAccessDeniedHandler.java
 C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\bussines\services\servicesImpl\ConsultorioServiceImpl.java
 C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\domain\dto\autenticacion\AuthenticationRequest.java
 C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\presentation\controller\ProfesionalController.java
@@ -42,6 +43,7 @@ C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\d
 C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\bussines\services\IPacienteService.java
 C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\presentation\controller\HorarioController.java
 C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\domain\entity\Horario.java
+C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\config\security\exception\CustomAuthenticationEntryPoint.java
 C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\domain\entity\enums\Rol.java
 C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\bussines\mapper\impl\TurnoMapper.java
 C:\Users\Diego\Desktop\tecnico\tecnico-certant\src\main\java\com\mendozamatias\domain\dto\horario\HorarioDto.java

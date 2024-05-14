@@ -51,6 +51,15 @@ public class ProfesionalServiceImpl implements IProfesionalService {
     }
 
     @Override
+    public ProfesionalDto modificarClave(Long profesionalId, String clave) {
+
+        Profesional profesional = profesionalRepository.findById(profesionalId).orElseThrow(()-> new NotFoundException("Profesional no encontrado"));
+        profesional.setClave(passwordEncoder.encode(clave));
+
+        return profesionalMapper.toDto(profesionalRepository.save(profesional));
+    }
+
+    @Override
     public boolean existeProfesionalConEsteDni(int dni) {
         return profesionalRepository.existsByDni(dni);
     }

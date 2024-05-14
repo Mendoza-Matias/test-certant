@@ -61,10 +61,11 @@ public class TurnoServiceImpl implements ITurnoService{
 
         Horario horario = horarioRepository.findById(horarioId).orElseThrow(()-> new NotFoundException("Horario no encontrado"));
 
-        if(horario.getEstado() == EstadoTurno.ASIGNADO){
+        if(horario.getEstado() == EstadoTurno.ASIGNADO || horario.getEstado() == EstadoTurno.ATENDIDO
+        || horario.getEstado() == EstadoTurno.CANCELADO){
             throw new HorarioException("Este horario ya se encuentra asignado a un turno");
         }
-
+        horario.setEstado(EstadoTurno.ASIGNADO);
         Paciente paciente = pacienteRepository.findById(pacienteId).orElseThrow(()-> new NotFoundException("Paciente no encontrado"));
 
         return turnoMapper.toDto(turnoRepository.save(Turno.builder()

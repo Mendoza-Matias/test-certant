@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-05-14T10:02:55-0300",
+    date = "2024-05-14T14:15:28-0300",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.10 (Oracle Corporation)"
 )
 @Component
@@ -140,6 +140,9 @@ public class TurnoMapperImpl implements TurnoMapper {
         if ( horarioDatosBasicosDto.getId() != null ) {
             horario.setId( horarioDatosBasicosDto.getId() );
         }
+        if ( horarioDatosBasicosDto.getHoraDeInicio() != null ) {
+            horario.setHoraDeInicio( horarioDatosBasicosDto.getHoraDeInicio() );
+        }
         if ( horarioDatosBasicosDto.getEstado() != null ) {
             horario.setEstado( horarioDatosBasicosDto.getEstado() );
         }
@@ -242,6 +245,9 @@ public class TurnoMapperImpl implements TurnoMapper {
 
         if ( horario.getId() != null ) {
             horarioDatosBasicosDto.setId( horario.getId() );
+        }
+        if ( horario.getHoraDeInicio() != null ) {
+            horarioDatosBasicosDto.setHoraDeInicio( horario.getHoraDeInicio() );
         }
         if ( horario.getEstado() != null ) {
             horarioDatosBasicosDto.setEstado( horario.getEstado() );

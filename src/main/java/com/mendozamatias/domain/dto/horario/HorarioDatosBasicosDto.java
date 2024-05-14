@@ -17,7 +17,7 @@ public class HorarioDatosBasicosDto {
     private Long id;
 
     @JsonFormat(pattern = "HH:mm")
-    private LocalTime horaInicio;
+    private LocalTime horaDeInicio;
 
     private EstadoTurno estado;
 
