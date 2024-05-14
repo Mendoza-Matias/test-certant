@@ -1,4 +1,4 @@
-package com.mendozamatias.config.security.exception;
+package com.mendozamatias.config.exception;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
