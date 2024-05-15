@@ -6,7 +6,9 @@
 
 Esta API RESTful ha sido diseñada para representar el funcionamiento convencional de una clínica médica, buscando satisfacer todas las necesidades requeridas. Permite la gestión de pacientes, profesionales, turnos, horarios de atención, consultorios y especialidades. Además, ofrece la opción de crear cada uno de estos elementos, así como también filtrarlos por especialidad, profesional, paciente, entre otras características. También cuenta con una validación a través del correo electrónico para evitar el acceso de los pacientes a ciertas partes del sistema.
 
-## Link del despliegue
+## Deploy
+
+- Link del despliegue : https://test-certant.onrender.com/
 
 👆👆👆 En el siguiente enlace puedes probar los endpoints de la API junto con su documentación.
 
