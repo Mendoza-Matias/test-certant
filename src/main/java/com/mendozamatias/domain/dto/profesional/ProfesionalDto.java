@@ -17,6 +17,8 @@ public class ProfesionalDto {
 
     private String apellido;
 
+    private String email;
+
     private EspecialidadDto especialidad;
 
 }

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-05-14T14:15:28-0300",
+    date = "2024-05-15T08:22:34-0300",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 17.0.10 (Oracle Corporation)"
 )
 @Component
@@ -118,6 +118,9 @@ public class ConsultorioMapperImpl implements ConsultorioMapper {
         if ( profesionalDto.getApellido() != null ) {
             profesional.setApellido( profesionalDto.getApellido() );
         }
+        if ( profesionalDto.getEmail() != null ) {
+            profesional.setEmail( profesionalDto.getEmail() );
+        }
         if ( profesionalDto.getEspecialidad() != null ) {
             profesional.setEspecialidad( especialidadDtoToEspecialidad( profesionalDto.getEspecialidad() ) );
         }
@@ -157,6 +160,9 @@ public class ConsultorioMapperImpl implements ConsultorioMapper {
         }
         if ( profesional.getApellido() != null ) {
             profesionalDto.setApellido( profesional.getApellido() );
+        }
+        if ( profesional.getEmail() != null ) {
+            profesionalDto.setEmail( profesional.getEmail() );
         }
         if ( profesional.getEspecialidad() != null ) {
             profesionalDto.setEspecialidad( especialidadToEspecialidadDto( profesional.getEspecialidad() ) );

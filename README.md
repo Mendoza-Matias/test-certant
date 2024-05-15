@@ -74,8 +74,13 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 ````
 
 ## Nota sobre documentación
-Para acceder a un endpoint privado, el profesional deberá ingresar su correo electrónico y la contraseña. Los pacientes no podrán acceder a dichos endpoints.
+Para acceder a un endpoint privado, el profesional deberá ingresar su correo electrónico y la clave.Los pacientes no podrán acceder a dichos endpoints.
+La clave de todos los profesionales es clave 123
 
+````shell
+    nombre de usuario : ana.martinez@example.com
+    clave : clave123
+````
 
 
 
