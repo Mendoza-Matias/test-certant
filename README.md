@@ -8,7 +8,7 @@ Esta API RESTful ha sido diseñada para representar el funcionamiento convencion
 
 ## Deploy
 
-- Link del despliegue : https://test-certant.onrender.com/
+- Link del despliegue : https://test-certant.onrender.com/api/api-docs
 
 👆👆👆 En el siguiente enlace puedes probar los endpoints de la API junto con su documentación.
 
