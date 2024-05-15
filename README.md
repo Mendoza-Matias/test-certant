@@ -82,6 +82,18 @@ La clave de todos los profesionales es clave 123
     clave : clave123
 ````
 
+## Crear horario 
+El formato valido del json es: 
+
+````shell
+{
+    "dia":"2024-06-15",
+    "horaDeInicio":"15:00",
+    "horaDeFin":"15:30"
+}
+
+````
+
 
 
 
